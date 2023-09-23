@@ -1,0 +1,80 @@
+@import "variables";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.main {
+  padding: 50px;
+  width: 100%;
+  background-color: $color-background;
+}
+
+@font-face {
+  font-family: "TKT-Medium";
+  src: url("../../public/fonts/TKT-Medium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TKT-Regular";
+  src: url("../../public/fonts/TKT-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import "./mixins/grid";
+
+.container,
+.container-fluid {
+  width: 100%;
+  margin: auto;
+  padding: 0 15px;
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.container {
+  @each $point, $width in $breakpoints {
+    @media (min-width: $width) {
+      max-width: map-get($container-max-width, $point);
+    }
+  }
+}
+
+.hidden-desktop,
+.hidden-tablet-desktop,
+.show-only-tablet,
+.show-only-mobile {
+  @include respond-to("desktop") {
+    display: none !important;
+  }
+}
+
+.hidden-tablet,
+.hidden-tablet-desktop,
+.slider-container {
+  width: 303px;
+  border: 2px solid #E5E5ED;
+  opacity: 1;
+}
+
+
+

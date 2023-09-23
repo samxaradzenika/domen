@@ -1,0 +1,31 @@
+/* Domzone.module.scss */
+
+.domzone {
+  margin-top: 20px;
+}
+
+.domzoneLabel {
+  font-weight: bold;
+}
+
+.domzoneList {
+  /* Display items in a single column */
+  display: flex;
+  flex-direction: column;
+}
+
+.domzoneItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Add spacing between items */
+}
+
+.checkbox {
+  margin-right: 8px; /* Add spacing between checkbox and label */
+}
+
+.itemName {
+  cursor: pointer; /* Provide a pointer cursor for better usability */
+}
+
+/* Add additional styles as needed */

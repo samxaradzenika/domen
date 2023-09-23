@@ -1,0 +1,31 @@
+/* CategoriesFilter.module.scss */
+
+.categoriesFilter {
+  margin-top: 20px;
+}
+
+.categoriesLabel {
+  font-weight: bold;
+}
+
+.categoryList {
+  /* Remove flex and set to display as a column */
+  display: flex;
+  flex-direction: column;
+}
+
+.categoryItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Add spacing between categories */
+}
+
+.checkbox {
+  margin-right: 8px; /* Add spacing between checkbox and label */
+}
+
+.categoryName {
+  cursor: pointer; /* Provide a pointer cursor for better usability */
+}
+
+/* Add additional styles as needed */
