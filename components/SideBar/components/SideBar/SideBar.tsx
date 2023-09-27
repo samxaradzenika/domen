@@ -27,25 +27,22 @@ const Sidebar = () => {
             </div>
             <SliderComponent />
             <div className={styles.priceFilter}>
-                <label className={styles.priceLabel}>Price</label>
-                <div className={styles.inputContainer}>
-                    <span className={styles.dollarSign}>$</span>
+                <label className={styles.priceLabel}>Search with symbols</label>
+                <div className={styles.inputContainer} style={{ gap: '10px' }}>
                     <input
                         type="text"
                         className={styles.input}
-                        placeholder="Min Price"
+                        placeholder="0"
                     />
-                    <span className={styles.dollarSign}>$</span>
                     <input
                         type="text"
                         className={styles.input}
-                        placeholder="Max Price"
+                        placeholder="26"
                     />
                 </div>
             </div>
             <SliderComponent />
-            <CategoriesFilter />
-            <Domzone />
+           
         </div>
     );
 };

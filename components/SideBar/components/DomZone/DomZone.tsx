@@ -5,12 +5,11 @@ import styles from './Domzone.module.scss';
 const Domzone = () => {
     // Dummy data for Domzone (change names as needed)
     const domzoneItems = [
-        'Item 1',
-        'Item 2',
-        'Item 3',
-        'Item 4',
-        'Item 5',
-        'Item 6',
+        '.ge',
+        '.com',
+        '.org',
+        '.net',
+       
     ];
 
     return (

@@ -1,0 +1,162 @@
+/* YourComponent.module.scss */
+.domenebi-mtavari-container {
+  width: 100%;
+  margin-left: 40px;
+  margin-top: 27px;
+  height: 1500px;
+  text-align: center;
+}
+
+.gijashvili-domeins-container {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  max-width: 827px;
+  height: 69px;
+  margin: 3px auto;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f5f5f8;
+    border-radius: 10px;
+    width: 827px;
+    height: 69px;
+    transition: 0.5s;
+  }
+
+  .btn-send-img {
+    margin: auto 0 auto 21px;
+    width: 36px;
+    height: 36px;
+    display: block; /* or display: inline-block; */
+  }
+
+  .btn-send-green {
+    display: none;
+  }
+
+  .gijashvili-domein {
+    margin: auto 0 auto 20px;
+    text-align: left;
+    font-family: TKTmed;
+    font-weight: medium;
+    font-size: 16px;
+  }
+
+  .domein-prices {
+    margin: auto 20px auto auto;
+
+    .fa-solid {
+      margin-left: 3px;
+      width: 9px;
+      height: 13px;
+    }
+
+    .domein-price-lari {
+      height: 21px;
+      font-family: TKTmed;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+
+  .domein-basket {
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin-right: 40px;
+    background: #99cc66;
+    border-radius: 10px;
+  }
+
+  .damatebulia {
+    cursor: pointer;
+    height: 36px;
+    margin: auto 0;
+  }
+
+  .domein-basket {
+    margin: auto 10px auto 0;
+
+    &:hover {
+      width: 120px;
+      justify-content: space-between;
+    }
+
+    &::before {
+      content: attr(data-hover);
+      visibility: hidden;
+      position: relative;
+      text-align: left;
+      transition: ease-in-out;
+      color: #ffffff;
+      font-family: TKTmed;
+      font-weight: normal;
+      font-size: 14px;
+    }
+
+    &:hover::before {
+      position: relative;
+      top: 10px;
+      margin: auto 0;
+      visibility: visible;
+    }
+  }
+
+  .domein-basket-img {
+    width: 20px;
+    height: 17px;
+    margin-top: -12px;
+    margin-bottom: auto;
+  }
+
+  .domein-basket:hover .domein-basket-img {
+    position: relative;
+    top: 12px;
+  }
+
+  .domein-price-dolar {
+    font-family: TKTmed;
+    font-weight: normal;
+    font-size: 12px;
+    color: #696974;
+  }
+
+  .domein-is-in-basket {
+    display: none;
+    width: 125px;
+    height: 36px;
+    margin: auto 18px auto 0;
+    background: #f5f5f8;
+    border-radius: 10px;
+
+    .domein-is-in-basket-img {
+      margin: auto 0 auto 18px;
+      width: 18px;
+      height: 18px;
+    }
+
+    .kalatshia-text {
+      margin: auto 18px auto 6px;
+      font-family: TKTmed;
+      font-weight: normal;
+      font-size: 14px;
+      color: #696974;
+    }
+  }
+
+  .domeins-bottom-line {
+    border: 1px solid #f1f1f5;
+    height: 0px;
+    width: 800px;
+    margin: 0 auto;
+  }
+}
+
+.line {
+  width: 786px;
+  height: 0px;
+  border: 1px solid #F1F1F5;
+  opacity: 1;
+  margin: 0 auto;
+}

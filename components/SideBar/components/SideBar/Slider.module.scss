@@ -1,9 +1,20 @@
-.ant-slider-handle {
+// SliderComponent.scss
+.slider-container {
+    width: 303px;
+    border: 2px solid #E5E5ED;
+    opacity: 1;
+  }
+  
+  .ant-slider-track {
+    background-color: #99CC66 !important;
+  }
+  
+  .ant-slider-handle {
     width: 25px !important;
     height: 25px !important;
     background: #FFFFFF !important;
     border: 2px solid #99CC66 !important;
     border-radius: 13px !important;
-    opacity: 1 !important;
-    margin-top: -9px !important; // Adjust to center the handle vertically
+    margin-top: -9px !important; // adjust based on your layout
   }
+  

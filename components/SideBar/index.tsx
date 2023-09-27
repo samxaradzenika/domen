@@ -1,20 +1,21 @@
-import React from 'react'
-import SideBar from './components/SideBar/SideBar'
-import Price from './components/Price/Price'
+import React from "react";
+import SideBar from "./components/SideBar/SideBar";
+import Price from "./components/Price/Price";
+import List from "../List/List";
 
 const SideBarHero = () => {
   return (
     <>
       <SideBar />
-     
+      <List />
     </>
-  )
-}
+  );
+};
 
-export default SideBarHero
+export default SideBarHero;
 
-
-{/* <p className={styles.price}>price</p>
+{
+  /* <p className={styles.price}>price</p>
 <div className={styles.flexbox}>
     <div>
         <input
@@ -30,4 +31,5 @@ export default SideBarHero
             placeholder="სახელით ძებნა"
         />
     </div>
-</div> */}
+</div> */
+}
